@@ -1,0 +1,1 @@
+{"uuid":"238d5c38-171a-4b05-b201-7d5566ac4be6","name":"tests.huiniao","children":["487c3956-2d4c-4bb5-b56a-f9222d31599a"],"befores":[{"name":"generateToken","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1688811430504,"stop":1688811432963}],"afters":[],"start":1688811430468,"stop":1688811433976}

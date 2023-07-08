@@ -59,3 +59,4 @@ public class BookingApiTests {
         bookingApiSteps.getBooking(1116).getBody().prettyPrint();
     }
 }
+

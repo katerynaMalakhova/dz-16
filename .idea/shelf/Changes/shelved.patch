@@ -1,0 +1,104 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>target/\n!.mvn/wrapper/maven-wrapper.jar\n!**/src/main/**/target/\n!**/src/test/**/target/\n\n### IntelliJ IDEA ###\n.idea/modules.xml\n.idea/jarRepositories.xml\n.idea/compiler.xml\n.idea/libraries/\n*.iws\n*.iml\n*.ipr\n\n### Eclipse ###\n.apt_generated\n.classpath\n.factorypath\n.project\n.settings\n.springBeans\n.sts4-cache\n\n### NetBeans ###\n/nbproject/private/\n/nbbuild/\n/dist/\n/nbdist/\n/.nb-gradle/\nbuild/\n!**/src/main/**/build/\n!**/src/test/**/build/\n\n### VS Code ###\n.vscode/\n\n### Mac OS ###\n.DS_Store
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 6a7c74f8cc29d92989a8cf03f7cdcd1b5180dbe2)
++++ b/.gitignore	(date 1688818119732)
+@@ -30,6 +30,9 @@
+ build/
+ !**/src/main/**/build/
+ !**/src/test/**/build/
++target
++allure-results
++.idea
+ 
+ ### VS Code ###
+ .vscode/
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"dbd4ddd8-cf83-444f-b754-3a3c2929df28\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/models/BodyArgs.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/models/Booking.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/models/BookingDates.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/models/Result.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/resources/jsonSchemePostBooking.json\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/steps/BaseApiSteps.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/tests/BaseApiTest.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"importingSettings\">\n      <MavenImportingSettings>\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\n      </MavenImportingSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2SC5zwRsGuM3mOpiHTJNYpH7U0r\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;\n  }\n}</component>\n  <component name=\"RunManager\" selected=\"TestNG.BookingApiTests.createNewBookingTest\">\n    <configuration name=\"BookingApiTests.createNewBookingTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"dz-16\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.BookingApiTests\" />\n      <option name=\"METHOD_NAME\" value=\"createNewBookingTest\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"BookingApiTests.deleteBookingTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"dz-16\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.BookingApiTests\" />\n      <option name=\"METHOD_NAME\" value=\"deleteBookingTest\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"BookingApiTests.patchBookingTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"dz-16\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.BookingApiTests\" />\n      <option name=\"METHOD_NAME\" value=\"patchBookingTest\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"BookingApiTests.putBookingTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"dz-16\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.BookingApiTests\" />\n      <option name=\"METHOD_NAME\" value=\"putBookingTest\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"huiniao.updateBooking\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"dz-16\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"tests.huiniao\" />\n      <option name=\"METHOD_NAME\" value=\"updateBooking\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"TestNG.BookingApiTests.createNewBookingTest\" />\n        <item itemvalue=\"TestNG.BookingApiTests.putBookingTest\" />\n        <item itemvalue=\"TestNG.BookingApiTests.patchBookingTest\" />\n        <item itemvalue=\"TestNG.huiniao.updateBooking\" />\n        <item itemvalue=\"TestNG.BookingApiTests.deleteBookingTest\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"dbd4ddd8-cf83-444f-b754-3a3c2929df28\" name=\"Changes\" comment=\"\" />\n      <created>1688637990806</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1688637990806</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/test/java/steps/BaseApiSteps.java</url>\n          <line>18</line>\n          <option name=\"timeStamp\" value=\"24\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java</url>\n          <line>31</line>\n          <option name=\"timeStamp\" value=\"31\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java</url>\n          <line>51</line>\n          <option name=\"timeStamp\" value=\"33\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java</url>\n          <line>52</line>\n          <option name=\"timeStamp\" value=\"34\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java</url>\n          <line>53</line>\n          <option name=\"timeStamp\" value=\"37\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java</url>\n          <line>54</line>\n          <option name=\"timeStamp\" value=\"47\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java</url>\n          <line>22</line>\n          <option name=\"timeStamp\" value=\"48\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-field\">\n          <url>file://$PROJECT_DIR$/src/test/java/tests/BaseApiTest.java</url>\n          <line>12</line>\n          <properties field=\"TOKEN\" class=\"tests.BaseApiTest\" />\n          <option name=\"timeStamp\" value=\"42\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n    <pin-to-top-manager>\n      <pinned-members>\n        <PinnedItemInfo parentTag=\"java.lang.Integer\" memberName=\"value\" />\n      </pinned-members>\n    </pin-to-top-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6a7c74f8cc29d92989a8cf03f7cdcd1b5180dbe2)
++++ b/.idea/workspace.xml	(date 1688818101035)
+@@ -5,20 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="dbd4ddd8-cf83-444f-b754-3a3c2929df28" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/models/BodyArgs.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/models/Booking.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/models/BookingDates.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/models/Result.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/jsonSchemePostBooking.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/BaseApiSteps.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseApiTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -172,51 +160,6 @@
+     <servers />
+   </component>
+   <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/test/java/steps/BaseApiSteps.java</url>
+-          <line>18</line>
+-          <option name="timeStamp" value="24" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java</url>
+-          <line>31</line>
+-          <option name="timeStamp" value="31" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java</url>
+-          <line>51</line>
+-          <option name="timeStamp" value="33" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java</url>
+-          <line>52</line>
+-          <option name="timeStamp" value="34" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/test/java/steps/BookingApiSteps.java</url>
+-          <line>53</line>
+-          <option name="timeStamp" value="37" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java</url>
+-          <line>54</line>
+-          <option name="timeStamp" value="47" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/test/java/tests/BookingApiTests.java</url>
+-          <line>22</line>
+-          <option name="timeStamp" value="48" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-field">
+-          <url>file://$PROJECT_DIR$/src/test/java/tests/BaseApiTest.java</url>
+-          <line>12</line>
+-          <properties field="TOKEN" class="tests.BaseApiTest" />
+-          <option name="timeStamp" value="42" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+     <pin-to-top-manager>
+       <pinned-members>
+         <PinnedItemInfo parentTag="java.lang.Integer" memberName="value" />

@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 import models.Booking;
 import org.json.JSONObject;
 
-public class BookingApiSteps  {
+public class BookingApiSteps {
     public static String TOKEN_VALUE;
     public static final String TOKEN = "token";
 
@@ -25,7 +25,7 @@ public class BookingApiSteps  {
         Response response = RestAssured.given()
                 .body(body.toString())
                 .post("/auth");
-         response.prettyPrint();
+        response.prettyPrint();
         TOKEN_VALUE = response.then().extract().jsonPath().get(TOKEN);
     }
 
